@@ -4,6 +4,10 @@ import javax.persistence.*;
 
 @Entity
 public class Product {
+	@ManyToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "category_id")
+	private Category category;
+
 	@Id
 	@GeneratedValue
 	private Long id;
@@ -12,9 +16,7 @@ public class Product {
 	
 	private Double price;
 	
-	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "category_id")
-	private Category category;
+
 
 	public Long getId() {
 		return id;
