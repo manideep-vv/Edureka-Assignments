@@ -1,9 +1,10 @@
-package com.demo.jpa.joins.model;
+package com.edureka.model;
 
 
 import javax.persistence.*;
 
 @Entity
+@Table(name = "orders")
 public class Order {
 	@Id
 	@GeneratedValue
@@ -62,5 +63,8 @@ public class Order {
 		this.quantity = quantity;
 		this.customer = customer;
 		this.product = product;
+	}
+
+	public Order() {
 	}
 }

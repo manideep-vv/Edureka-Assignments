@@ -1,10 +1,10 @@
-package com.demo.jpa.joins;
+package com.edureka;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoEcommerceApplicationForJoinsTests {
+class SpringJpaEdurekaApplicationTests {
 
 	@Test
 	void contextLoads() {

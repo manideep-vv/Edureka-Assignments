@@ -1,4 +1,4 @@
-package com.demo.jpa.joins.model;
+package com.edureka.model;
 
 import javax.persistence.*;
 
@@ -8,12 +8,8 @@ public class Product {
 	@GeneratedValue
 	private Long id;
 	
-//	@NotBlank(message = "Product name is mandatory")
-//	@Size(min = 2, max = 50, message = "Product name must be between 2 and 50 characters")
 	private String name;
 	
-//	@NotNull(message = "Price is mandatory")
-//	@DecimalMin(value = "0.0", inclusive = false, message = "Price must be greater than 0")
 	private Double price;
 	
 	@ManyToOne(cascade = CascadeType.ALL)
@@ -64,5 +60,8 @@ public class Product {
 		this.name = name;
 		this.price = price;
 		this.category = category;
+	}
+
+	public Product() {
 	}
 }

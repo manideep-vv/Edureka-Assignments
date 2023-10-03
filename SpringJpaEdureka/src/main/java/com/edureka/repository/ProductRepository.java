@@ -1,6 +1,6 @@
-package com.demo.jpa.joins.repositories;
+package com.edureka.repository;
 
-import com.demo.jpa.joins.model.Product;
+import com.edureka.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ProductRepository extends JpaRepository<Product,Long> {

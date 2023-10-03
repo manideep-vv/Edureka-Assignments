@@ -1,8 +1,9 @@
-package com.demo.jpa.joins.controller;
+package com.edureka.controller;
 
-import com.demo.jpa.joins.model.Product;
-import com.demo.jpa.joins.repositories.ProductRepository;
+import com.edureka.model.Product;
+import com.edureka.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,6 +13,7 @@ import java.util.List;
 
 @RestController
 //@Validated
+@Validated
 public class ProductController {
 
     @Autowired

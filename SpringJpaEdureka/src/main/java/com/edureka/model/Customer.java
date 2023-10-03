@@ -1,4 +1,4 @@
-package com.demo.jpa.joins.model;
+package com.edureka.model;
 
 import javax.persistence.*;
 import java.util.List;
@@ -31,6 +31,9 @@ public class Customer {
 
 	public List<Order> getOrders() {
 		return orders;
+	}
+
+	public Customer() {
 	}
 
 	public void setOrders(List<Order> orders) {
