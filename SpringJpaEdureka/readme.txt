@@ -9,11 +9,18 @@ select * from customer;
 -- drop table employee_laptops,employee,laptop;
 drop table product,category,orders,customer;
 
+i have already attached the postman collection in this git repo named "Edureka-thursdays order mgmnt sys.postman_collection.json"
+
+1) first we should create customer,
+2) next we should create product, then category will be saved automatically as part of cascadeType.All
+3) next we should create order
 create customer
 =================
 {
     "name":"manideep"   
 }
+request-2
+======
 {
     "name":"sai prakash"   
 }
@@ -21,6 +28,8 @@ create product
 ------------
 - no need to create category seperately as this will be cascaded/insert automatically due to cascade type
 ==============
+request -1
+===========
 {
 
     "name":"keyboard",
@@ -29,6 +38,8 @@ create product
         "name":"electronics"
     }
 }
+request -2
+===========
 {
 
     "name":"cellphone",
@@ -37,6 +48,8 @@ create product
         "name":"electronics"
     }
 }
+request -3
+===========
 {
 
     "name":"shirt",
@@ -45,6 +58,8 @@ create product
         "name":"clothes"
     }
 }
+request -4
+===========
 {
 
     "name":"pant",
@@ -55,6 +70,8 @@ create product
 }
 create order
 =============
+request -1
+===========
 {
 
     "quantity":2,
@@ -68,6 +85,8 @@ create order
 
 update order
 =======
+request -1
+===========
 {
     "id":21,
     "quantity":20,
