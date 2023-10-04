@@ -1,3 +1,14 @@
+queries
+======
+
+SELECT * FROM product;
+select * from category;
+select * from orders;
+select * from customer;
+
+-- drop table employee_laptops,employee,laptop;
+drop table product,category,orders,customer;
+
 create customer
 =================
 {
@@ -6,7 +17,9 @@ create customer
 {
     "name":"sai prakash"   
 }
-create product- no need to create category seperately as this will be cascaded/insert automatically due to cascade type
+create product
+------------
+- no need to create category seperately as this will be cascaded/insert automatically due to cascade type
 ==============
 {
 

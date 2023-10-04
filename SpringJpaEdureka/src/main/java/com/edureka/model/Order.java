@@ -13,9 +13,9 @@ public class Order {
 	private Integer quantity;
 	
 //	@Valid
-	@ManyToOne
-	@JoinColumn(name = "customer_id")
-	private Customer customer;
+//	@ManyToOne
+//	@JoinColumn(name = "customer_id")
+//	private Customer customer;
 	
 //	@Valid
 	@ManyToOne
@@ -38,13 +38,13 @@ public class Order {
 		this.quantity = quantity;
 	}
 
-	public Customer getCustomer() {
-		return customer;
-	}
-
-	public void setCustomer(Customer customer) {
-		this.customer = customer;
-	}
+//	public Customer getCustomer() {
+//		return customer;
+//	}
+//
+//	public void setCustomer(Customer customer) {
+//		this.customer = customer;
+//	}
 
 	public Product getProduct() {
 		return product;
@@ -55,15 +55,15 @@ public class Order {
 	}
 
 //	@AssertTrue(message = "Order can only be placed if customer has a valid name and the product is in stock")
-	private boolean isValidOrder() {
-		return (customer != null && customer.getName() != null && product != null && product.isInStock());
-	}
-
-	public Order(Integer quantity, Customer customer, Product product) {
-		this.quantity = quantity;
-		this.customer = customer;
-		this.product = product;
-	}
+//	private boolean isValidOrder() {
+//		return (customer != null && customer.getName() != null && product != null && product.isInStock());
+//	}
+//
+//	public Order(Integer quantity, Customer customer, Product product) {
+//		this.quantity = quantity;
+//		this.customer = customer;
+//		this.product = product;
+//	}
 
 	public Order() {
 	}

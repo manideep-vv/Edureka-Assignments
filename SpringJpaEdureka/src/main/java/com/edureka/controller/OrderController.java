@@ -25,7 +25,7 @@ public class OrderController {
 
     }
 
-    //This is not working
+    //This is also working
     @GetMapping("/getAllOrders")
     public List<Order> getAllProducts() {
         return repository.findAll();

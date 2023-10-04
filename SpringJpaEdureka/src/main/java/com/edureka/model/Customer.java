@@ -10,7 +10,7 @@ public class Customer {
 	
 	private String name;
 	
-	@OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
+	@OneToMany( cascade = CascadeType.ALL)
 	private List<Order> orders;
 
 	public Long getId() {
