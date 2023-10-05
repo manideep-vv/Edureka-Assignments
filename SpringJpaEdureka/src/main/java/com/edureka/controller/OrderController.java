@@ -2,6 +2,7 @@ package com.edureka.controller;
 
 import com.edureka.model.Customer;
 import com.edureka.model.Order;
+import com.edureka.repository.CustomerRepository;
 import com.edureka.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +16,9 @@ public class OrderController {
     @Autowired
     OrderRepository repository;
 
+    @Autowired
+    CustomerRepository customerRepository;
+
     //working
     @PostMapping("/createOrder")
     public String saveAndGetAllProducts(@RequestBody Order order) {
@@ -27,9 +31,10 @@ public class OrderController {
 
     //This is also working
     @GetMapping("/getAllOrders")
-    public List<Order> getAllProducts() {
+    public List<Order> getAllOrders() {
         return repository.findAll();
     }
+
 
     //working
     @PutMapping("/updateOrder")

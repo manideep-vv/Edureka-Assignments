@@ -97,3 +97,16 @@ request -1
         "id":20
     }
 }
+
+Finding all products in a Order
+--------------------------------------------------
+http://localhost:8080/getAllProductsInOrders
+
+- Finding all Orders for a Customer -difficult
+
+- Finding all products for a Category
+	http://localhost:8080/getAllProductsForACategory
+	
+- Finding the Customer with the most number of Orders
+- Finding the Category with no Products
+- Finding the Orders with more than 1000 Rs in value
